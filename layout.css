@@ -6,7 +6,7 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
-    color: black;
+    color: white;
 }
 
 .navbar {
@@ -31,26 +31,44 @@ nav ul li {
     list-style: none;
     display: inline-block;
     font-size: 17px;
+    padding: 2px;
     width: auto;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    font-family: 'Quantico';
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 
-nav ul li i {
-    margin: 0 15px;
+nav ul li a {
+    margin: 0 3px;
 }
 
 nav ul li:hover {
-    background: #000;
-    color: #fff;
-    font-weight: 100;
+    background: #c0cc1b;
+    color: #ffffff;
+    font-weight: 50;
 }
 
+a:link {
+    color: #aaa;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #aaa;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 .dDay {
+    position: absolute;
+    top: 100;
+    left: 5%;
+    width: 800px;
+    height: 200px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
@@ -58,6 +76,12 @@ nav ul li:hover {
 }
 
 .dDayTwo {
+    position: absolute;
+    top: 500px;
+    right: 5%;
+    width: 800px;
+    height: 200px;
+    padding: 10px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
@@ -79,4 +103,38 @@ h3 {
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
+    color: #aaa;
+}
+
+.landings {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#beachhead {
+    width: 100%;
+    max-width: 450px;
+    right: 5%;
+    height: auto;
+    object-fit: fill;
+    margin-right: 5%;
+}
+
+.boatLanding {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 0 auto;
+}
+
+#boat {
+    width: 100%;
+    max-width: 450px;
+    left: 5%;
+    height: auto;
+    object-fit: fill;
+    margin-left: 5%;
 }
